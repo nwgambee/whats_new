@@ -28,7 +28,7 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        <NewsContainer data={this.state.newsData}/>
+        <NewsContainer currentNews={this.state.newsData}/>
       </div>
     );
   }
