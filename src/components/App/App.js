@@ -5,6 +5,7 @@ import entertainment from '../../data/entertainment'
 import health from '../../data/health'
 import science from '../../data/science'
 import technology from '../../data/technology'
+import NewsContainer from '../NewsContainer/NewsContainer'
 
 
 
@@ -27,7 +28,7 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        YOUR CODE GOES HERE!
+        <NewsContainer data={this.state.newsData}/>
       </div>
     );
   }
