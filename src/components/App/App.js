@@ -25,8 +25,8 @@ class App extends Component {
       }
     }
   }
-  changeSource = () => {
-    
+  changeSource = (event) => {
+    console.log(event.target.name);
   }
 
   render () {
