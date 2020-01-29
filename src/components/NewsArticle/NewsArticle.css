@@ -1,7 +1,12 @@
 .NewsArticle {
   font-family: 'Raleway', sans-serif;
+  border: 2px solid black;
+  width: 30%;
+  margin: 20px;
+  padding: 10px;
 }
 
-h2 {
-
+img {
+  width: 60%;
+  height: 60%;
 }
