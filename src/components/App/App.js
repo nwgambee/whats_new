@@ -6,6 +6,7 @@ import health from '../../data/health'
 import science from '../../data/science'
 import technology from '../../data/technology'
 import NewsContainer from '../NewsContainer/NewsContainer'
+import Menu from '../Menu/Menu'
 
 
 
