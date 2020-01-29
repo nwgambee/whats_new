@@ -5,8 +5,8 @@ import NewsArticle from '../NewsArticle/NewsArticle.js'
 // NEWSCONTAINER COMPONENT CODE GOES HERE
 
 const NewsContainer = (props) => {
-  console.log(props.currentNews.local);
-  let articles = props.currentNews.local.map(article => {
+  console.log(props);
+  let articles = props.currentNews.map(article => {
     return <NewsArticle
       headline={article.headline}
       img={article.img}
@@ -16,7 +16,7 @@ const NewsContainer = (props) => {
   return (
     <div className='NewsContainer'>
       {articles}
-    </div>  
+    </div>
   )
 }
 

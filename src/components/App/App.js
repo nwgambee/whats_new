@@ -22,11 +22,12 @@ class App extends Component {
         local: local,
         science: science,
         technology: technology
-      }
+      },
+      currentNewsSource: 'local',
     }
   }
   changeSource = (event) => {
-    console.log(event.target.name);
+    this.setState({currentNewsSource: event.target.name})
   }
 
   render () {
@@ -34,7 +35,7 @@ class App extends Component {
       <div className="app">
         <h1>What's New?</h1>
         <Menu changeSource={this.changeSource}/>
-        <NewsContainer currentNews={this.state.newsData}/>
+        <NewsContainer currentNews={this.state.newsData[this.state.currentNewsSource]}/>
       </div>
     );
   }
