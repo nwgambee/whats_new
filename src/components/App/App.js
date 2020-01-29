@@ -7,6 +7,7 @@ import science from '../../data/science'
 import technology from '../../data/technology'
 import NewsContainer from '../NewsContainer/NewsContainer'
 import Menu from '../Menu/Menu'
+import Form from '../SearchForm/SearchForm'
 
 
 
@@ -35,6 +36,7 @@ class App extends Component {
       <div className="app">
         <h1>What's New?</h1>
         <Menu changeSource={this.changeSource}/>
+        <Form />
         <NewsContainer currentNews={this.state.newsData[this.state.currentNewsSource]}/>
       </div>
     );
