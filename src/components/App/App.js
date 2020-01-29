@@ -29,6 +29,7 @@ class App extends Component {
     return (
       <div className="app">
         <h1>What's New?</h1>
+        <Menu />
         <NewsContainer currentNews={this.state.newsData}/>
       </div>
     );
