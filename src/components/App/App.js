@@ -30,13 +30,19 @@ class App extends Component {
   changeSource = (event) => {
     this.setState({currentNewsSource: event.target.name})
   }
+  searchArticles = (query) => {
+    const searchedArticles = this.state.newsData[this.state.currentNewsSource].filter(article => {
+      return article.headline.toLowerCase().includes(query.toLowerCase());
+    })
+    console.log(searchedArticles);
+  }
 
   render () {
     return (
       <div className="app">
         <h1>What's New?</h1>
         <Menu changeSource={this.changeSource}/>
-        <Form />
+        <Form search={this.searchArticles}/>
         <NewsContainer currentNews={this.state.newsData[this.state.currentNewsSource]}/>
       </div>
     );

@@ -5,7 +5,6 @@ import NewsArticle from '../NewsArticle/NewsArticle.js'
 // NEWSCONTAINER COMPONENT CODE GOES HERE
 
 const NewsContainer = (props) => {
-  console.log(props);
   let articles = props.currentNews.map(article => {
     return <NewsArticle
       headline={article.headline}
