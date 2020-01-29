@@ -6,6 +6,7 @@ import health from '../../data/health'
 import science from '../../data/science'
 import technology from '../../data/technology'
 import NewsContainer from '../NewsContainer/NewsContainer'
+import Menu from '../Menu/Menu'
 
 
 
@@ -21,15 +22,20 @@ class App extends Component {
         local: local,
         science: science,
         technology: technology
-      }
+      },
+      currentNewsSource: 'local',
     }
+  }
+  changeSource = (event) => {
+    this.setState({currentNewsSource: event.target.name})
   }
 
   render () {
     return (
       <div className="app">
         <h1>What's New?</h1>
-        <NewsContainer currentNews={this.state.newsData}/>
+        <Menu changeSource={this.changeSource}/>
+        <NewsContainer currentNews={this.state.newsData[this.state.currentNewsSource]}/>
       </div>
     );
   }
