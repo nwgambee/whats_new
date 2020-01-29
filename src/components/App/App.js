@@ -33,7 +33,7 @@ class App extends Component {
     return (
       <div className="app">
         <h1>What's New?</h1>
-        <Menu />
+        <Menu changeSource={this.changeSource}/>
         <NewsContainer currentNews={this.state.newsData}/>
       </div>
     );

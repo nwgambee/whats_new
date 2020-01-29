@@ -3,7 +3,7 @@ import './Menu.css'
 
 // MENU COMPONENT CODE GOES HERE
 
-const Menu = () => {
+const Menu = ({changeSource}) => {
   return (
     <div className='Menu'>
       <button className='news-src-btn'>Entertainment</button>
