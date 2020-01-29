@@ -1,8 +1,6 @@
 import React from 'react';
 import './Menu.css'
 
-// MENU COMPONENT CODE GOES HERE
-
 const Menu = ({changeSource}) => {
   return (
     <div className='Menu'>

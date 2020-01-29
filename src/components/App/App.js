@@ -9,10 +9,6 @@ import NewsContainer from '../NewsContainer/NewsContainer'
 import Menu from '../Menu/Menu'
 import Form from '../SearchForm/SearchForm'
 
-
-
-
-
 class App extends Component {
   constructor() {
     super();
@@ -33,10 +29,10 @@ class App extends Component {
   searchArticles = (query) => {
     const searchedArticles = this.state.newsData[this.state.currentNewsSource].filter(article => {
       return article.headline.toLowerCase().includes(query.toLowerCase());
-    })
-    console.log(searchedArticles);
+    });
+    let current = this.state.currentNewsSource;
+    
   }
-
   render () {
     return (
       <div className="app">
