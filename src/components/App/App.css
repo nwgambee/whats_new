@@ -7,9 +7,11 @@
 
 .app {
   text-align: center;
-  background-color: #419D78;
+  /* background-color: #419D78; */
+  background-color: navy;
 }
 
 .title {
   padding: 20px;
+  color: white;
 }
