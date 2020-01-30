@@ -9,4 +9,6 @@ button {
   border-radius: 7px;
   padding: 4px;
   margin: 5px;
+  border: none;
+  box-shadow: 1px 1px;
 }
