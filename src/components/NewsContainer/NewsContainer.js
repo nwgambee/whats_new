@@ -3,7 +3,6 @@ import './NewsContainer.css'
 import NewsArticle from '../NewsArticle/NewsArticle.js'
 
 const NewsContainer = (props) => {
-  console.log(props);
   let articles = props.currentNews.map(article => {
     return <NewsArticle
       headline={article.headline}
