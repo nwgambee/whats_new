@@ -7,11 +7,10 @@ This application was built with `create-react-app`.
 Clone down Repo and run `npm install` after navigating into the directory. 
 Run `npm start` to start the local server. If this does not happen automatically, navigate to `localhost:3000` in a new browser tab. 
 
-### Expectations / Rules
+### Overview
 
-Build a React App that displays different categories of current news.
+The goal of this project was to build a React App that displays different categories of current news. This was our very first project using React. Our learning goals were to learn the basics of React and working with components and props and to learn and implement snapshot testing.
 
-![what's new screenshot](./screenshots/whats-new.png)
+### Screenshots
 
-We want to see good commit habits - atomic commits that log small, focused changesets.
 
