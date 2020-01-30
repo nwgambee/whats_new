@@ -22,4 +22,8 @@ describe('App', () => {
     wrapper.instance().changeSource(mockEvent);
     expect(wrapper.state('currentNewsSource')).toEqual('science');
   });
+  it('should update state if searchArticles receives the correct query', () => {
+    wrapper.instance().searchArticles('denver');
+
+  })
 });

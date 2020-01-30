@@ -23,7 +23,6 @@ class App extends Component {
     this.state = {
       newsData: newsData,
       currentNewsSource: 'local',
-      query: '',
     }
   }
   changeSource = (event) => {
@@ -35,6 +34,7 @@ class App extends Component {
     })
     if (filteredArticles.length !== 0) {
       this.setState({currentNewsSource: 'filtered', newsData: {...newsData, filtered: filteredArticles}})
+      console.log(this.state);
     } else {
       window.alert('Sorry, there are no stories that match that search.')
     }
