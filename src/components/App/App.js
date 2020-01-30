@@ -23,7 +23,6 @@ class App extends Component {
     this.state = {
       newsData: newsData,
       currentNewsSource: 'local',
-      query: '',
     }
   }
   changeSource = (event) => {
