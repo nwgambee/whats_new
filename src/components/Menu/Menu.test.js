@@ -4,8 +4,10 @@ import { shallow } from 'enzyme';
 import Menu from './Menu';
 
 describe('Menu', () => {
-  it('', () => {
-    const wrapper = shallow(<    />);
+  it('should match the snapshot', () => {
+    const wrapper = shallow(<Menu
+      onClick={jest.fn()}
+            />);
 
     expect(wrapper).toMatchSnapshot();
   });
