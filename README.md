@@ -12,5 +12,6 @@ Run `npm start` to start the local server. If this does not happen automatically
 The goal of this project was to build a React App that displays different categories of current news. This was our very first project using React. Our learning goals were to learn the basics of React and working with components and props and to learn and implement snapshot testing.
 
 ### Screenshots
+coming soon!
 
 
