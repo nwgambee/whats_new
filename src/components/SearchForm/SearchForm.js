@@ -25,6 +25,7 @@ class Form extends Component {
         />
         <button
           name="submit-btn"
+          className='submit-btn'
           type="submit"
           onClick={this.searchArticles}
           >

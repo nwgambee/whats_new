@@ -1,0 +1,16 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+    border-radius: 6px;
+    padding: 3px;
+}
+
+.submit-btn {
+  background-color: #CEDADA;
+}
