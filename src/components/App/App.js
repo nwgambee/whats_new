@@ -31,12 +31,12 @@ class App extends Component {
       return article.headline.toLowerCase().includes(query.toLowerCase());
     });
     let current = this.state.currentNewsSource;
-    
+
   }
   render () {
     return (
       <div className="app">
-        <h1>What's New?</h1>
+        <h1 className="title">What's New?</h1>
         <Menu changeSource={this.changeSource}/>
         <Form search={this.searchArticles}/>
         <NewsContainer currentNews={this.state.newsData[this.state.currentNewsSource]}/>
