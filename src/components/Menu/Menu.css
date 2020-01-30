@@ -14,3 +14,7 @@ button {
   border: none;
   box-shadow: 1px 1px;
 }
+
+button:hover {
+  transform: scale(1.1);
+}
