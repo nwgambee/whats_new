@@ -4,7 +4,9 @@ exports[`App should match the snapshot with all data passed through correctly 1`
 <div
   className="app"
 >
-  <h1>
+  <h1
+    className="title"
+  >
     What's New?
   </h1>
   <Menu
