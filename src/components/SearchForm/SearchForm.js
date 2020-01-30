@@ -9,6 +9,7 @@ class Form extends Component {
   searchArticles = (event) => {
     event.preventDefault();
     this.props.search(this.state.query);
+    this.setState({query: ''})
   }
   updateInput = (event) => {
     this.setState({query: event.target.value})

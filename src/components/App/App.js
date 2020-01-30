@@ -33,7 +33,11 @@ class App extends Component {
     let filteredArticles = this.state.newsData[this.state.currentNewsSource].filter(article => {
       return article.headline.toLowerCase().includes(query.toLowerCase())
     })
-    this.setState({currentNewsSource: 'filtered', newsData: {...newsData, filtered: filteredArticles}})
+    if (filteredArticles.length !== 0) {
+      this.setState({currentNewsSource: 'filtered', newsData: {...newsData, filtered: filteredArticles}})
+    } else {
+      window.alert('Sorry, there are no stories that match that search.')
+    }
 
   }
   render () {
