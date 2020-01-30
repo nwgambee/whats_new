@@ -3,12 +3,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 .app {
   text-align: center;
   background-color: #B6C8A9;
-  display: grid;
 }
 
 .title {
