@@ -9,28 +9,35 @@ import NewsContainer from '../NewsContainer/NewsContainer'
 import Menu from '../Menu/Menu'
 import Form from '../SearchForm/SearchForm'
 
+let newsData = {
+  entertainment: entertainment,
+  health: health,
+  local: local,
+  science: science,
+  technology: technology
+}
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      newsData: {
-        entertainment: entertainment,
-        health: health,
-        local: local,
-        science: science,
-        technology: technology
-      },
+      newsData: newsData,
       currentNewsSource: 'local',
+      query: '',
     }
   }
   changeSource = (event) => {
     this.setState({currentNewsSource: event.target.name})
   }
   searchArticles = (query) => {
-    const searchedArticles = this.state.newsData[this.state.currentNewsSource].filter(article => {
-      return article.headline.toLowerCase().includes(query.toLowerCase());
-    });
-    let current = this.state.currentNewsSource;
+    let filteredArticles = this.state.newsData[this.state.currentNewsSource].filter(article => {
+      return article.headline.toLowerCase().includes(query.toLowerCase())
+    })
+    if (filteredArticles.length !== 0) {
+      this.setState({currentNewsSource: 'filtered', newsData: {...newsData, filtered: filteredArticles}})
+    } else {
+      window.alert('Sorry, there are no stories that match that search.')
+    }
 
   }
   render () {
@@ -38,7 +45,7 @@ class App extends Component {
       <div className="app">
         <h1 className="title">What's New?</h1>
         <Menu changeSource={this.changeSource}/>
-        <Form search={this.searchArticles}/>
+        <Form search={this.searchArticles} />
         <NewsContainer currentNews={this.state.newsData[this.state.currentNewsSource]}/>
       </div>
     );
