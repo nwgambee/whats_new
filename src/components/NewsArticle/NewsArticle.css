@@ -21,8 +21,8 @@ img {
 .link {
   color: #C04ABC;
   font-weight: bold;
-  border: 1px solid black;
-  border-radius: 3px;
+  /* border: 1px solid black;
+  border-radius: 3px; */
   padding: 3px;
 }
 
