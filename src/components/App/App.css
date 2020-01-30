@@ -10,3 +10,7 @@
   background-color: #B6C8A9;
   display: grid;
 }
+
+.title {
+  padding: 10px;
+}
