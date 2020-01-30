@@ -18,7 +18,7 @@ class Form extends Component {
       <form>
         <input
         type="text"
-        placeholder="Title..."
+        placeholder="Search"
         name="title"
         value={this.state.query}
         onChange={this.updateInput}
@@ -29,7 +29,7 @@ class Form extends Component {
           type="submit"
           onClick={this.searchArticles}
           >
-          Submit Idea
+          Search News
         </button>
       </form>
     )

@@ -9,8 +9,9 @@ button {
 input {
     border-radius: 6px;
     padding: 3px;
+    width: 15%;
 }
 
 .submit-btn {
-  background-color: #CEDADA;
+  background-color: #E0A458;
 }

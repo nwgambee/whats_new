@@ -3,9 +3,10 @@
 }
 
 button {
-  background-color: pink;
+  background-color: #C04ABC;
   font-size: 1em;
+  font-weight: 700;
   border-radius: 7px;
-  padding: 2px;
+  padding: 4px;
   margin: 5px;
 }

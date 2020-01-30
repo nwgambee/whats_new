@@ -6,6 +6,7 @@
   margin: 20px;
   padding: 10px;
   background-color: #CEDADA;
+
   /* height: 640px; */
 }
 
@@ -18,7 +19,7 @@ img {
 }
 
 .link {
-  color: green;
+  color: #C04ABC;
   font-weight: bold;
   border: 1px solid black;
   border-radius: 3px;
