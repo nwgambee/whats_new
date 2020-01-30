@@ -4,8 +4,12 @@ import { shallow } from 'enzyme';
 import Form from './SearchForm';
 
 describe('Form', () => {
-  it('', () => {
-    const wrapper = shallow(<    />);
+  it('should match the snapshot', () => {
+    const wrapper = shallow(<Form
+      onClick={jest.fn()}
+      value='some query'
+      onChange={jest.fn()}
+         />);
 
     expect(wrapper).toMatchSnapshot();
   });
